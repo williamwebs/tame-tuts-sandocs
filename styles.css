@@ -73,9 +73,13 @@ nav {
 }
 
 .menu__items {
+  /* flex: 1; */
+  /* border: 1px solid red; */
+  /* text-align: right; */
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .menu__items a:link {
