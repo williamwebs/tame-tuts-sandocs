@@ -1,0 +1,105 @@
+/* 
+  --- 01 TYPOGRAPHY SYSTEM
+  - font-sizes:
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 72 / 86 / 98
+
+  - font-weights: 
+  Default: 400
+
+  - line-height: 
+  Default: 1
+  
+  
+  
+  --- 02 COLORS
+  - Primary: #8b5cf6
+  - Tints: 
+  - Shades: #d1befb, #f3effe
+  - Grey: #555
+  
+  --- 07 WHITE SPACE
+  - Spacing system (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+:root {
+    /* default boostrap */
+    --bg-default: #e2dddd;
+    --bg-primary: #008ca9;
+    --bg-secondary: #6b7278;
+    --bg-info: #0dcaf0;
+    --bg-danger: #dc3545;
+    --bg-success: #198754;
+    --bg-warning: #ffc107;
+
+    /* 
+      root property naming should be easy for future front-end dev to work with as well
+      and always be consistent with one naming pattern and css class pattern
+
+      --primary-color: #8b5cf6;
+      --primary-color-tint-1: #f3effe;
+    */
+    --bg-primary: #8b5cf6;
+    --bg-primary-light: #9773eb;
+    --bg-primary-hover: #603eb1;
+    --bg-solitude: #e5e7eb;
+    --bg-white: #ffffff;
+    --bg-tint: #f3effe;
+    --bg-grey: #808080;
+    --bg-devy-grey: #555555;
+    --bg-light-grey: #6b737c;
+    --bg-border: #e5e2ec;
+    --bg-black: #000000;
+    --text-main: #110f0f;
+    --text-paragraph: var(--bg-light-grey);
+    --scrollbar-bg: #B8B8B9;
+    --scrollbar-shadow: rgba(0, 0, 0, 0.5);
+
+    /* text */
+    --text-white: #ffffff;
+    --text-black: #000000;
+    --text-danger: #ff0000;
+    --text-info: #17a2b8;
+    --text-success: #019f01;
+    --text-warning: #fcab32;
+    --transparent: transparent;
+
+    /* errors */
+    --danger: #ff0000;
+    --info: #17a2b8;
+    --success: #019f01;
+    --error: #000000;
+    --warning: #fcab32;
+
+    /* social */
+    --facebook: #4267b2;
+    --google: #4285f4;
+    --instagram: #d1425f;
+    --youtube: #ff0000;
+    --twitter: #1da1f2;
+    --whatsapp: #128C7E;
+    --messenger: #00B2FF;
+    --mewe: #5E5097;
+
+    /* transition */
+    --transition: all ease-in 0.01s;
+    --transition-1: all ease-in 0.1s;
+    --transition-2: all ease-in 0.2s;
+    --transition-3: all ease-in 0.3s;
+    --transition-4: all ease-in 0.4s;
+    --transition-5: all ease-in 0.5s;
+
+    /* box-shadow */
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    --box-shadow-1: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+    --box-shadow-2: rgba(0, 0, 0, 0.4) 0px 3px 5px;
+    --box-shadow-3: rgba(33, 35, 38, 0.10) 0px 10px 10px -10px;
+    --box-shadow-4: rgba(0, 0, 0, 0.10) 0px 4px 6px -1px, rgba(0, 0, 0, 0.6) 0px 2px 4px -1px;
+    --box-shadow-5: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    --box-shadow-6: rgba(17, 17, 26, 0.10) 0px 0px 16px;
+    --box-shadow-7: rgba(17, 17, 26, 0.5) 0px 1px 0px, rgba(17, 17, 26, 0.10) 0px 0px 8px;
+    --box-shadow-8: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    --box-shadow-9: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    --box-shadow-10: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    --box-shadow-11: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    --box-shadow-12: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}

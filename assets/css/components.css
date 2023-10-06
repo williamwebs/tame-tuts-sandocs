@@ -1,0 +1,175 @@
+/* 
+ We're just creating just like a min css library for usage all over our future project
+ This is just a very basic one. Will this type of method, we don't need to always write many re-usable css over and over again
+*/
+.relative,
+.position-relative {
+    position: relative;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-row {
+	display: grid;
+	column-gap: 9.4rem;
+	row-gap: 4rem;
+}
+.grid-cols-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+.grid-cols-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+.grid-cols-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+.grid-cols-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+.grid-footer {
+	grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+.grid-row-1{
+    grid-row: 1;
+}
+.grid-row-2{
+    grid-row: 2;
+}
+.grid-row-3{
+    grid-row: 3;
+}
+.grid-row-4{
+    grid-row: 4;
+}
+.grid-row-5{
+    grid-row: 5;
+}
+.grid-row-6{
+    grid-row: 6;
+}
+.gap-1{
+    gap: 1rem;
+}
+.gap-2{
+    gap: 2rem;
+}
+.gap-3{
+    gap: 3rem;
+}
+.gap-4{
+    gap: 4rem;
+}
+.gap-5{
+    gap: 5rem;
+}
+.overflow{
+    overflow: hidden !important;
+}
+.overflow-x{
+    overflow-x: hidden !important;
+}
+.overflow-y{
+    overflow-y: hidden !important;
+}
+.d-block{
+    display: block;
+}
+.margin-auto,
+.m-auto{
+    margin: 0 auto !important;
+}
+.font-w-500,
+.font-weight-500 {
+	font-weight: 500;
+}
+.font-w-600,
+.font-weight-600 {
+	font-weight: 600;
+}
+.font-w-700,
+.font-weight-700 {
+	font-weight: 700;
+}
+.font-w-800,
+.font-weight-800 {
+	font-weight: 800;
+}
+.hidden{
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+.d-flex, 
+.flex {
+    display: flex;
+}
+.align-item-center,
+.ai-center {
+    align-items: center;
+}
+.align-item-start,
+.ai-start {
+    align-items: flex-start;
+    align-items: start;
+}
+.align-item-end,
+.ai-end {
+    align-items: flex-end;
+    align-items: end;
+}
+.justify-item-center,
+.ji-center{
+    justify-items: center;
+}
+.justify-item-left,
+.ji-left{
+    justify-items: left;
+}
+.justify-item-right,
+.ji-right{
+    justify-items: right;
+}
+.justify-content-center,
+.jc-center{
+    justify-content: center;
+}
+.justify-content-between,
+.jc-between{
+    justify-content: space-between;
+}
+.item-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+}
+.item-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+/* End components */
+  
+
+/* media queries */
+@media (max-width: 767px) {
+    .grid, .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+  

@@ -1,0 +1,164 @@
+YOu did a great job and am very much impressed with the improvement!
+
+However please take note from the below.
+
+
+
+1.  Try as much as possible to stick to 1type of font-size definition (rem or px)
+    Since you converted the way browser should inteprete font-size by setting the html to base 10.
+
+    html {
+        font-size: 62.5%;
+    }
+    
+    1rem = 10px;
+    .1rem = 1px;
+    .8rem = 8px;
+
+
+
+
+2.  Be consistent with class naming. Class naming does'nt have one actual way, but advisable to always stick to one naming pattern
+i.e 
+// .footer__wrapper or .footer__holder or footer_section
+// child element can be, footer__holder-footer or .footer
+// Child of .footer__holder-footer can also be named accordingly and so on
+
+.footer__holder{
+    position: relative;
+}
+.footer__holder-footer{
+    //
+}
+.footer__holder-footer .copyright{
+    //
+}
+.footer__holder-footer .links{
+    //
+}
+
+
+<div class="footer__holder">
+    <footer class="footer__holder-footer">
+        <div class="copyright">
+            <span>© 2023 Sandocs. All rights reserved</span>
+        </div>
+        <div class="links">
+            <a href="">Terms</a>
+            <a href="">License</a>
+            <a href="">FAQ</a>
+        </div>
+    </footer>
+</div>
+
+
+
+
+
+3.  Kindly convert your svg to inline, to one is able to use well and the html content is not too buggy.
+i.e 
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="1em"
+    viewBox="0 0 496 512"
+    class="github__icon"
+    >
+    <path
+        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+    />
+    </svg>
+
+
+-- Converted to the below 
+// As you can see the below is more easier to understand and also, better as the html page won't be too bucky to read
+
+<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512" class="github__icon" >
+    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+</svg>
+
+
+
+
+4.  Arranging the html elements, makes life easier for everyone and also for future developer's to work on same code
+
+
+
+5.  It's better to leave the @media queries to be in pixes
+@media (max-width: 700px) {
+    //  
+}
+
+
+
+6.  Don't ever reduce main element width. If you must attach width then, use the max-width
+i.e 
+<div class="section">
+
+    <div>
+        child element
+    </div>
+
+</div>
+
+With the below style, We dont need no media queries anymore for mobile, as it'll stays 100%, as soon as the width is below 800px.
+//  using min-width: is the opposite of max-width:.
+.section{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+7.  Don't ever add margin to main elements. By default it's good to allow all main element fall untop of each other.
+// With this method, we don't need to worry much about those using older phone version, as your website will work perfectly on all devices.
+i.e 
+
+
+
+8.  At times you did add classname to the svg icon and style it. Try as much as possible to avoid this, due to the backend programmers. 
+It's better to either wrap the svg into any element and target the svg from within the element class.
+// The below example already shows the name [svg] which we already know by looking at the css, what the html will be like
+i.e 
+<div class="rocket">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+    </svg>
+</div>
+
+.rocket svg {
+    fill: green;
+    color: red;
+}
+
+
+
+9.  I see you styling default element tags always. 
+// Like: <header> <nav> and so on... Avoid doing that and instead include a style name
+i.e 
+<header class="main__header"> </header>
+<nav class="navbar"> </nav>
+<section class="blog__section"> 
+
+    <div class="blog__section-header">
+        <h1></h1>
+        <p></p>
+    </div>
+
+    <div class="blog__section-body">
+        <h1></h1>
+        <p></p>
+    </div>
+
+</section>
+
+
+
+I added a file names [.htaccess]
+Always include this file in your development, so that the browser will not store cache (old copies of your style)
+With this, all your css automatically update without clearing your broswer cache.
+
+
+
+I think that's all for now and i have highlighted the main focus here.
+Regards!
