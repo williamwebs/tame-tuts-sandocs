@@ -1,0 +1,21 @@
+1.  on the documentation page, how do i render dynamically the sub-menu contents
+    on the sidebar to the main page (and the internal links, on the rightbar)?
+
+        e.g: 
+            - Getting Started
+                -- Introduction (sidebar sub-menu)
+                -- Prerequisite (sidebar sub-menu)
+......
+
+how do I render the prerequisite content on the 'main content' section of the page.
+
+2.  Is there any logic to keep track of the current page and display the next & previous
+    pages links on the footer of each content in the 'main content' section of the page?
+
+e.g:
+    on the Introduction page, Prerequisite (sub-menu) is next...
+    how do I get the 'prerequisite' to be displayed as the next page 
+    at the bottom of the Introduction page
+
+PS: do I create separate pages for each of the submenus??
+    or is there an alternative

@@ -1,11 +1,11 @@
-@import url('root.css');
-@import url('components.css');
+@import url("root.css");
+@import url("components.css");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
+  /* list-style: none; */
   text-decoration: none;
 }
 
@@ -20,10 +20,10 @@ body {
   font-weight: 400;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
+h1,
+h2,
+h3,
+h4,
 h5 {
   font-size: 6rem;
   line-height: 1.1;
@@ -31,16 +31,16 @@ h5 {
 }
 
 h2,
-h3, 
-h4, 
+h3,
+h4,
 h5 {
   font-size: 2rem;
   margin: 2.5rem 0;
 }
 
 /* pre,  */
-span, 
-small, 
+span,
+small,
 a,
 p {
   font-size: 1.5rem;
@@ -53,7 +53,7 @@ pre code,
 div code {
   white-space: pre-line;
 }
-.code-transparent{
+.code-transparent {
   background-color: var(--transparent) !important;
   background: var(--transparent) !important;
 }
@@ -108,7 +108,12 @@ div code {
   This taking from the main website only 
 */
 .blur-gradiant {
-  background: radial-gradient(circle at 15% 50%,#ede9fe,hsla(0,0%,100%,0) 25%),radial-gradient(circle at 85% 30%,#d8f3f6,hsla(0,0%,100%,0) 25%);
+  background: radial-gradient(
+      circle at 15% 50%,
+      #ede9fe,
+      hsla(0, 0%, 100%, 0) 25%
+    ),
+    radial-gradient(circle at 85% 30%, #d8f3f6, hsla(0, 0%, 100%, 0) 25%);
 }
 .svg-holder {
   width: fit-content;
@@ -147,9 +152,9 @@ div code {
   justify-content: space-between;
   width: 100%;
   background: var(--bg-white);
-  padding: .9rem 5rem;
+  padding: 0.9rem 5rem;
 }
-.navbar__logo{
+.navbar__logo {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -157,10 +162,10 @@ div code {
   height: 3.5rem;
   object-fit: contain;
 }
-.navbar__logo .menu-icon{
+.navbar__logo .menu-icon {
   cursor: pointer;
 }
-.navbar__logo .menu-icon svg{
+.navbar__logo .menu-icon svg {
   width: 2.5rem;
   height: 3rem;
 }
@@ -169,6 +174,7 @@ div code {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  list-style: none;
 }
 .navbar__menu a {
   font-size: 1.4rem;
@@ -177,18 +183,19 @@ div code {
 .navbar__menu a:hover {
   color: var(--bg-primary);
 }
+
 /* here we select all parent (li) tag, that's not last-child, and then affect the <a> tag */
 .navbar__menu li:not(:last-child) > a {
   display: inline-block;
-  padding: 0 0 .2rem;
-  border-bottom: var(--bg-solitude) .1rem solid;
+  padding: 0 0 0.2rem;
+  border-bottom: var(--bg-solitude) 0.1rem solid;
 }
 .navbar__menu li:not(:last-child) > a:hover {
-  border-bottom: var(--bg-primary) .1rem solid;
+  border-bottom: var(--bg-primary) 0.1rem solid;
 }
 .navbar__menu .fa-solid {
   font-size: 1.1rem;
-  margin-left: .3rem;
+  margin-left: 0.3rem;
 }
 .navbar__menu .github__icon {
   font-size: 2.2rem;
@@ -215,7 +222,7 @@ div code {
   width: 2.5rem;
   stroke: var(--bg-solitude);
 }
-.header h1{
+.header h1 {
   padding: 2rem 0 0;
 }
 header p {
@@ -223,10 +230,10 @@ header p {
   line-height: 1.2;
   margin: 2.2rem 0;
 }
-.cta__holder{
+.cta__holder {
   position: inherit;
 }
-.cta__holder .copy{
+.cta__holder .copy {
   display: inline-block;
   font-size: 1.5rem;
   margin: 0;
@@ -234,14 +241,14 @@ header p {
   cursor: pointer;
   transition: var(--transition);
 }
-.cta__holder .copy:hover{
+.cta__holder .copy:hover {
   color: var(--bg-primary);
 }
 /* End of Header section */
 
 /* features section */
-.features, 
-.features__highlight{
+.features,
+.features__highlight {
   position: relative;
 }
 .features__highlight h2 {
@@ -255,10 +262,10 @@ header p {
   padding: 5rem 2rem;
   text-align: left;
 }
-.features .heading{
+.features .heading {
   text-align: center;
 }
-.features .flex{
+.features .flex {
   gap: 2rem;
 }
 .features .icon {
@@ -278,7 +285,7 @@ header p {
   padding: 10rem 2rem 5rem;
 }
 .api__section .text-block,
-.api__section .code-block{
+.api__section .code-block {
   position: relative;
   width: 100%;
 }
@@ -307,7 +314,6 @@ header p {
   position: relative;
   border-top: 2.5rem solid var(--bg-tint);
   padding: 3rem;
-
 }
 .code-navigator {
   position: absolute;
@@ -342,9 +348,8 @@ header p {
 }
 /* End api section */
 
-
 /* sponsors */
-.sponsors{
+.sponsors {
   padding: 3rem 2rem 7rem 2rem;
   text-align: center;
 }
@@ -355,13 +360,12 @@ header p {
 }
 /* End sponsors */
 
-
 /* footer */
-.footer__holder{
+.footer__holder {
   position: relative;
   text-align: center;
   padding: 3rem 5rem;
-  border-top: .1rem solid #e6e3e3;
+  border-top: 0.1rem solid #e6e3e3;
 }
 .footer__holder .footer {
   display: flex;
@@ -378,4 +382,3 @@ header p {
   margin-left: 2rem;
 }
 /* End footer */
-
