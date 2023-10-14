@@ -5,7 +5,7 @@
             - Getting Started
                 -- Introduction (sidebar sub-menu)
                 -- Prerequisite (sidebar sub-menu)
-......
+.......
 
 how do I render the prerequisite content on the 'main content' section of the page.
 
