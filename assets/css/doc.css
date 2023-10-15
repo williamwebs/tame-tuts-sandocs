@@ -1,4 +1,4 @@
-/* remeber no need for us to @import anything again, as we include the style.css in the doc.html page as well */
+/* remeber no need for us to @import anything again, as we include the style.css in the doc/ page as well */
 
 /* Scrollbar */
 ::-webkit-scrollbar {
@@ -103,7 +103,8 @@
   transition: var(--transition);
 }
 .sidebar li a:hover,
-.sidebar li a:active {
+.sidebar li a:active,
+.sidebar li a.active {
   color: var(--bg-primary);
 }
 /* End sidebar */

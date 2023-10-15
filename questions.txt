@@ -19,3 +19,31 @@ e.g:
 
 PS: do I create separate pages for each of the submenus??
     or is there an alternative
+
+
+
+
+
++++++++++++++++++++++++
+Answers:
++++++++++++++++++++++++
+The main website on <https://sandocs.vercel.app/> was built in React.js using Next.js as a framwork and with that it's easierfor the state to change on clik.
+
+We can only mimick that, or by create advance <onState change> javascript code to serve a a framworkthat can change state of <DOM> and fetch content on load
+For now since it's an html template, then you can simple create each files separately.
+
+Prerequisite.html 
+Installation.html and so on...
+++++++++++++++++++++++++++++++++++
+
+
+
+
+++++++++++++++++++++++++++++++++++
+to make code cleaner, i'll create a new folder called doc and include all document related html inside of it.
+
+Take note that since, its a folder, we must have the <index> file. else user's will have to see the folder content itsel, which we do not want to happen.
+
+++++++++++++++++++++++++++++++++++
+I created a sample just to show you it's possible for someone to create it's own custom wrapper for website to work on state loading 
+without actually loading the full content. But this is more possible using a framework and not with core <html> alone.

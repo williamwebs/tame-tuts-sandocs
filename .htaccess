@@ -1,5 +1,12 @@
 <IfModule mod_headers.c>
-    <FilesMatch "\.(css|js|png|gif|jpeg|jpg)$">
+    Header set Connection keep-alive
+    <filesMatch ".(js|css|xml|gz|html|php)$">
+        Header append Vary: Accept-Encoding
+    </filesMatch>
+    <filesMatch "\.(x?html?|php|css|js|jpg|jpeg|png)$">
+        Header set Cache-Control "public, must-revalidate"
+    </filesMatch>
+    <FilesMatch "\.(css|js|png|gif|jpeg|jpg|html)$">
         Header set Cache-Control "no-cache, no-store, must-revalidate"
         Header set Pragma "no-cache"
         Header set Expires "0"
