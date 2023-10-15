@@ -27,8 +27,7 @@ function loadContent(url, title, event) {
 
             // on mobile device, we want to automatically close navbar on each click
             mobileNavbarMenuToggle();
-
-            console.log(html, url);
+                
       })
       .catch(error => console.error('Error fetching content:', error));
 }
@@ -84,8 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
-
 
 // Removes .html at the end of the string
 // we do not actually need this, but just a re-usable code
