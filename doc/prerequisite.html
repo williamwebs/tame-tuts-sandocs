@@ -1,22 +1,111 @@
 <div class="unwrapped">
+  <h1>Prerequisite</h1>
+  <ul>
+    <li class="font-w-500"><span class="doc-link">Node.js 10+</span></li>
+    <li class="font-w-500"><span class="doc-link">Yarn</span> (Optional)*</li>
+  </ul>
 
-    <h1>Prerequisite</h1>
-    <p class="font-w-500">
-        Sandocs is beautifully designed, expertly crafted components UI kit
-        for building a high-quality
-        <a href="#" class="doc-link">website</a> and web apps using web
-        <a href="#" class="doc-link">technologies</a> — HTML, CSS, and
-        JavaScript — with integrations of the world’s most popular framework
-        Bootstrap.
-    </p>
+  <!-- Quick Start -->
 
-    <!-- footer -->
-    <div class="footer-block">
-        <a href="" class="d-block text-right font-w-500 doc-link">Next</a>
-        <a href="" class="d-block text-right font-w-500 doc-link"
-        >Prerequisite</a
-        >
+  <h2 id="quick-start">Quick Start</h2>
+  <p class="font-w-500 m-1-auto">
+    The fastest way to get your project set up is to use our
+    <span class="doc-link">quick start</span> guide, which will help scaffold
+    the basic structure for you.
+  </p>
+  <p class="font-w-500 m-1-auto">
+    To use it, open up your terminal in the desired directory and run the
+    following command:
+  </p>
+
+  <!-- code block -->
+  <div class="code-block m-1-auto rounded">
+    <code class="code font-w-600"
+      ><span class="text-primary">yarn</span> create sandocs [yourprojectname]
+    </code>
+  </div>
+  <!-- End of code block -->
+  <p class="font-w-500">
+    The command will interactively ask for details to configure your site’s
+    metadata.
+  </p>
+
+  <!-- sub heading -->
+  <h3>Sub Heading</h3>
+  <p class="font-w-500 m-1-auto">
+    Once this done, a scaffolded documentation site will be created in the
+    <span class="font-w-700">`docs`</span>
+    directory (or custom directory name, if passed) under the current directory.
+  </p>
+  <p class="font-w-500 m-1-auto">
+    To see it in action, navigate into newly scaffolded directory, install the
+    dependencies and start the local server:
+  </p>
+
+  <!-- Manual Installation -->
+  <h2>Manual Installation</h2>
+  <p class="font-w-500 m-1-auto">
+    If you prefer, you can build a basic documentation site from ground up
+    instead of using the generator mentioned above.
+  </p>
+  <p class="font-w-500 m-1-auto">
+    Note: If you already have an existing project and would like to keep
+    documentation inside the project, start from Step 3.
+  </p>
+
+  <p class="m-1-auto">1. <span class="font-w-700">`mkdir starter &&` `cd starter`</span></p>
+  <p class="font-w-500 m-1-auto">Create and change into a new directory</p>
+  <p class="m-1-auto">1. <span class="font-w-700">`yarn init`</span></p>
+  <p class="font-w-500 m-1-auto">Initialize with your preferred package manager</p>
+  <!-- code block -->
+
+  <div class="code-block m-1-auto rounded">
+    <code class="code font-w-600"
+      ><span class="text-primary">yarn add</span> -D sandocs
+    </code>
+  </div>
+  <!-- End of code block -->
+  <p class="font-w-500 m-1-auto">
+    Add helper scripts to <span class="font-w-700">`package.json`</span>
+  </p>
+  <p class="font-w-500 m-1-auto">
+    This step is optional but highly recommended, as the rest of the
+    documentation will assume those scripts being present.
+  </p>
+  <p class="m-1-auto">1. <span class="font-w-700">`yarn docs:dev`</span></p>
+  <p class="font-w-500 m-1-auto">Serve the documentation site in the local server.</p>
+  <p class="font-w-500 m-1-auto">
+    It will start a hot-reloading development server at
+    <a href="" class="doc-link">http://localhost:8080</a> .
+  </p>
+  <p class="font-w-500 m-1-auto">
+    By now, you should have a basic but functional documentation site. Next,
+    learn about recommended directory structure and the basics of configuration
+    in VuePress.
+  </p>
+  <p class="font-w-500 m-1-auto">
+    Once you’re familiar with those concepts mentioned above, learn how to
+    enrich your content with static assets, Markdown extensions and components.
+  </p>
+  <p class="font-w-500 m-1-auto">
+    And when your documentation site starts to take shape, be sure to read about
+    multi-language support and the deployment guide.
+  </p>
+
+  <hr class="hr-line">
+
+  <!-- footer -->
+  <div class="footer-block flex ai-center jc-between">
+    <div class="footer-left">
+      <a href="" class="d-block text-left font-w-500">Previous</a>
+      <a href="" class="d-block text-left font-w-500 doc-link">Introduction</a>
     </div>
-    <!-- End of footer -->
-    
+    <div class="footer-right">
+      <a href="" class="d-block text-right font-w-500">Next</a>
+      <a href="" class="d-block text-right font-w-500 doc-link"
+        >Environmental Setup</a
+      >
+    </div>
+  </div>
+  <!-- End of footer -->
 </div>
